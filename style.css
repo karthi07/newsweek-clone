@@ -172,7 +172,7 @@ date {
 
 .ct-art{
   flex: 1;
-  padding: 0 10px;
+  padding-right:15px;
 }
 
 .ct-art-img{
@@ -182,4 +182,22 @@ date {
 
 .ct-art-img > img{
   width: 100%;
+}
+
+.ct-art-cnt{
+  padding: 15px 0;
+}
+
+.ct-art-cnt > p {
+  font: 15px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+  color: rgba(39,39,39,.5);
+  margin-bottom: 10px;
+}
+
+.ct-art-cnt > h4 {
+  font-weight: 400;
+  color: #272727;
+  font: 20px/22px "Lora",serif;
+  margin-bottom: 10px;
+
 }
