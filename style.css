@@ -1,3 +1,6 @@
+:root {
+  --bg-color: rgb(247, 34, 16);
+}
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -15,16 +18,34 @@ a:hover {
 .logo-img {
   width: 396px;
   height: 60px;
+  padding-left: 20px;
 }
 
-.bg-color {
-   background-color: rgb(247, 34, 16);
+.weather-img {
+  width: 24px;
+  height: 24px;
 }
 
-.navbar {
+date {
+  line-height: 32px;
+}
+
+.header-ctn {
+   background-color: var(--bg-color);
+}
+
+.header1 {
+  display: flex;
   justify-content: space-between;
-  color: white;
+  padding: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
 
+  color: white;
+}
+
+.header1 > * {
+  align-self: flex-end;
 }
 
 .nav-sign {
@@ -38,9 +59,100 @@ a:hover {
 
 .nav-subs {
     background-color: white;
-    color: rgb(247, 34, 16);
+    color: var(--bg-color);
     font-size: 18px;
     font-weight: 700;
     padding: 5px 10px;
     text-transform: uppercase;
+}
+
+.header-nav {
+  background-color: white;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 0 20px;
+  font-weight: bold;
+  border-right: 1px solid lightgray;
+}
+
+.nav-link:hover {
+  color: var(--bg-color);
+}
+
+.last-link {
+  font-size: 16px;
+  color: rgba(0,0,0,.55);
+  font-weight: 400;
+  border-right: none;
+}
+
+.last-link > img {
+  height: 16px;
+  width: 16px;
+}
+
+/* main sec*/
+
+.main {
+  padding: 0 30px;
+  border-top: 0.1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgba(126, 126, 126, 0.55);
+}
+
+.col1, .col2, .col3, .col4 {
+  float: left;
+  
+  
+  min-height: 300px;
+}
+
+.col4 {
+  width: 70%;
+}
+
+.col1 {
+  width: 40%;
+}
+
+.col2 {
+  width: 60%;
+}
+
+.col3{
+  width: 30%;
+}
+
+
+/* feature - articles #col1 */
+
+.col-title {
+  color: rgba(3,3,3,.4);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+
+.art-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+.art-cnt {
+  padding: 10px 0;
+}
+
+.art-cnt > p {
+  font-size: 15px;
+}
+
+.art-cnt > h4 {
+  font-weight: 700;
+  color: black;
 }
