@@ -4,6 +4,8 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  width: 97%;
+  margin: 0 auto;
 }
 
 a {
@@ -27,11 +29,12 @@ a:hover {
 }
 
 date {
-  line-height: 32px;
+  line-height: 42px;
 }
 
 .header-ctn {
    background-color: var(--bg-color);
+
 }
 
 .header1 {
@@ -53,6 +56,7 @@ date {
     font-size: 18px;
     font-weight: 700;
     padding: 5px 10px;
+    padding-bottom: 0;
     text-transform: uppercase;
     vertical-align: bottom;
 }
@@ -68,8 +72,9 @@ date {
 
 .header-nav {
   background-color: white;
-  padding: 10px 0;
+  padding: 18px 0;
   margin-bottom: 5px;
+  border-bottom: 0.1px solid rgb(228, 228, 228);
 }
 
 .nav-link {
@@ -99,16 +104,12 @@ date {
 
 /* main sec*/
 
-.main {
-  padding: 0 30px;
-  border-top: 0.1px solid rgb(228, 228, 228);
-  border-bottom: 1px solid rgba(126, 126, 126, 0.55);
+.news-ctn {
+  padding: 10px 15px;
 }
 
 .col1, .col2, .col3, .col4 {
   float: left;
-  
-  
   min-height: 300px;
 }
 
@@ -118,10 +119,16 @@ date {
 
 .col1 {
   width: 40%;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .col2 {
   width: 60%;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .col3{
@@ -135,6 +142,7 @@ date {
   color: rgba(3,3,3,.4);
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 16px;
   font-weight: 700;
   padding: 12px 0;
 }
@@ -155,4 +163,23 @@ date {
 .art-cnt > h4 {
   font-weight: 700;
   color: black;
+}
+
+.ct-sec {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ct-art{
+  flex: 1;
+  padding: 0 10px;
+}
+
+.ct-art-img{
+  position: relative;
+  display: block;
+}
+
+.ct-art-img > img{
+  width: 100%;
 }
