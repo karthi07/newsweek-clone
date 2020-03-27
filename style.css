@@ -116,6 +116,7 @@ date {
 
 .col4 {
   width: 72%;
+  position: relative;
 }
 
 .col1 {
@@ -127,9 +128,17 @@ date {
 
 .col2 {
   width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
   padding-left: 15px;
   padding-right: 15px;
+}
 
+.col2-ctn{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .col3{
