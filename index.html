@@ -52,7 +52,7 @@
         <div class="container-fluid col4">
             <div class="row">
                 <div class="col1">
-                    <div class="col-title">
+                    <div class="col-title" id="test">
                         featured stories
                     </div>
 
@@ -155,6 +155,29 @@
                             </div>
                             
                         </article> 
+                        <article class="art s-insight">
+                            <div class="art-img">
+                            <div class="img-caption blue-text"> SPONSORED INSIGHT </div>
+                                    <img src="https://d.newsweek.com/en/full/1559216/tokyo-my-city-chizu-nakamoto.jpg?w=500&h=333&f=9c0c7599e1d2310c5649861e93649619" alt="">
+                            </div>
+                            <div class="art-cnt s-insight-cnt">
+                                    <h4> Female Entrepreneur Active in Tokyo and Uganda </h4>
+                                    <p> APT Women aims to foster and educate fledgling global business leaders like Chizu Nakamoto. </p>
+                            </div>
+                            
+                        </article> 
+        
+                        <article class="art s-insight">
+                            <div class="art-img">
+                            <div class="img-caption blue-text "> SPONSORED INSIGHT </div>
+                                    <img src="https://d.newsweek.com/en/full/1573613/university-birmingham-dubai.jpg?w=500&h=333&f=230990a1f18e561a516f2f98ebfda59f" alt="">
+                            </div>
+                            <div class="art-cnt s-insight-cnt">
+                                    <h4> How Can a Good Business Education Benefit You? </h4>
+                                    <p> Enrolling at a good Business School might be the best investment you can make in your future, and while costs can be significant, the rewards are incalculable. Find out more. </p>
+                            </div>
+                            
+                        </article> 
         
                     </div>
 
@@ -162,7 +185,7 @@
 
                 </div>
                 <div class="col2">
-                    <div class="col2-ctn fixed-top">
+                    <div class="col2-ctn fixed-top" id="col2-div">
 
                         <div class="col-title">
                             Top stories
@@ -544,6 +567,16 @@
 
     </div>
 
+    <!-- script to make col sitcky # document.getElementById("col2-div").style.height -->
+    <script>
+        var col2height = document.getElementById("col2-div").offsetHeight;
+        document.getElementById("test").textContent = "helo"+col2height;
+        col2height += screen.height; 
+        document.getElementById("col2-div").style.top = "-"+col2height+"px"
+        //col2height = -1500
+        //
+        
+    </script>
 
     <!-- add bootstarp js -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

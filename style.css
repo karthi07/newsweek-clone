@@ -138,7 +138,7 @@ date {
 .col2-ctn{
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: -2100px;
 }
 
 .col3{
