@@ -487,6 +487,10 @@ date {
   margin: 15px 0;
 }
 
+.slide-ctn{
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .slide-caption {
   width: 70px;
   height: 52px;
@@ -507,4 +511,39 @@ date {
   font-weight: 700;
   font-size: 22px;
   color: black;
+}
+
+/* other stories*/
+
+.reg-ctn {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.reg-title{
+  font-size: 22px;
+  font-weight: 700;
+  color: inherit;
+  padding: 8px 0;
+  color: var(--bg-color);
+  background-color: rgba(255,255,255,.9);  
+}
+
+
+.reg-art {
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.reg-arts :last-child {
+  border-bottom: none;
+}
+
+.end-border {
+  display: block;
+  background-color: #f4f5f6;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  right: -30px;
 }
