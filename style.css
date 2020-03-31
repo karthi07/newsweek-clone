@@ -622,3 +622,85 @@ date {
 .signup {
   height: 100%;
 }
+
+/* Footer */
+
+footer {
+  padding: 30px 0;
+  color: #666666;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+}
+
+.foot-logo {
+  display: block;
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+}
+
+.foot-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.foot-cnt {
+  align-items: flex-end;
+  margin-bottom: 12px;  
+}
+
+.foot-cnts {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social {
+ padding-bottom: 10px; 
+}
+
+.social  img {
+  margin: 5px;
+  height: 24px;
+  width: 26px;
+}
+
+.foot-links {
+  padding-top: 15px;
+}
+
+.links1 {
+  display: inline;
+  padding-left: 15px;
+}
+
+.links1 > li {
+  line-height: 15px;
+  padding-right: 8px;
+  margin: 6px 0;
+  border-right: 1px solid #d9d9d9;;
+}
+
+.links1 :last-child {
+  border-right: none;
+}
+
+.links2 {
+  margin-bottom: 5px;
+}
+
+.links2 > li {
+  line-height: 15px;
+  padding-right: 8px;
+  margin: 6px 0;
+  border-right: 1px solid #d9d9d9;;
+}
+
+.links2 a {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.links2 :first-child {
+  padding-left: 0;
+}
+
