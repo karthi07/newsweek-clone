@@ -38,7 +38,7 @@ date {
 
 }
 
-.header1 {
+.header-top {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -48,8 +48,12 @@ date {
   color: white;
 }
 
-.header1 > * {
+.header-top > * {
   align-self: flex-end;
+}
+
+.header-ctn span {
+  font-size: 14px;;
 }
 
 .nav-sign {
@@ -66,6 +70,7 @@ date {
     background-color: white;
     color: var(--bg-color);
     font-size: 18px;
+    line-height: 14px;
     font-weight: 700;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -101,6 +106,34 @@ date {
 .last-link > img {
   height: 16px;
   width: 16px;
+}
+
+/* header 2*/
+
+.header2 {
+  display: none;
+  padding: 15px;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.header2.scrolled {
+  display: flex;
+}
+
+.header-a {
+  align-items: center;
+}
+
+.logo-img2 {
+  width: 132px;
+  height: 20px;
+  padding-right: 15px;
+}
+
+.open-menu {
+  padding-left: 30px;
+  width: 74px;
 }
 
 /* main sec*/
@@ -415,9 +448,20 @@ date {
   padding: 15px;
 }
 
+
+.n-logo {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
 .mag-title {
   color: black;
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 19px;
@@ -703,4 +747,8 @@ footer {
 .links2 :first-child {
   padding-left: 0;
 }
+
+
+/* media queries*/
+
 

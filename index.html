@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsweek - Responsive Clone</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <div class="header-ctn">
-        <div class="header1">
+        <div class="header-top">
             <div>
                 <div>
                     <img class="weather-img" src="https://g.newsweek.com/img/weather/30.png" alt="Partly Cloudy" class="weather-icon">
@@ -46,6 +47,20 @@
             <img src="https://g.newsweek.com/www/images/icon-search-glass.svg" alt="">    
             </a>
         </nav>
+    </div>
+
+    <div class="fixed-top justify-content-between header2" id="h2">
+        <div class="header-a">
+            <img class="logo-img2" src="images/logo.svg" alt="logo">
+            <img class="weather-img" src="https://g.newsweek.com/img/weather/30.png" alt="Partly Cloudy" class="weather-icon">
+            <span> 33° Bangalore, IN  </span>
+        </div>
+        <div class="header-b">
+            <a class="nav-sign" href="#"> Sign in </a>
+            <a class="nav-subs" href="#"> Suscribe 	&nbsp; 	&nbsp; &gt; </a>
+            <a class="open-menu" href="#"> <img src="images/open-menu.png" alt="open menu"> </a>
+        </div>
+
     </div>
     
     <div class="news-ctn container-fluid">
@@ -186,8 +201,9 @@
 
 
                 </div>
+
                 <div class="col2">
-                    <div class="col2-ctn fixed-top" id="col2-div">
+                    <div class="col2-ctn" id="col2-div">
 
                         <div class="col-title">
                             Top stories
@@ -364,7 +380,7 @@
             </div>
         </div>
 
-        <div class="col3 row">
+        <div class="col3">
             <div class="col-title op-title">
                 Opinion
             </div>
@@ -436,7 +452,7 @@
             </div>
             
             <div class="col-title op-title">
-                The Debate
+             The Debate
             </div>
 
             <div class="opinion-ctn">
@@ -572,8 +588,8 @@
 
     <div class="p-ctn container-fluid">
 
-        <div class="mag-title">
-            IN THE MAGAZINE
+        <div class="mag-title d-flex justify-content-center">
+        IN THE MAGAZINE
         </div>
 
         <div class="row row-cols-4 in-mag-row1"> 
@@ -677,8 +693,8 @@
 
     <div class="p-ctn container-fluid">
 
-        <div class="mag-title">
-            Editor's pick
+        <div class="mag-title d-flex justify-content-center">
+            <span class="n-logo"></span>   Editor's pick
         </div>
 
         <div class="row row-cols-4 ed-row"> 
@@ -791,8 +807,8 @@
 
     <div class="p-ctn slide-ctn container-fluid">
 
-        <div class="mag-title">
-            featured Slideshows
+        <div class="mag-title d-flex justify-content-center">
+            <span class="n-logo"></span>  featured Slideshows
         </div>
 
         <div class="row row-col-3 ed-row">
@@ -835,7 +851,7 @@
     <div class="p-ctn reg-ctn container-fluid">
 
         <div class="reg-title">
-            U.S.
+           U.S.
         </div>
 
         <div class="row ">
@@ -897,7 +913,7 @@
     <div class="p-ctn reg-ctn container-fluid">
 
         <div class="reg-title">
-            Europe
+        Europe
         </div>
 
         <div class="row ">
@@ -959,7 +975,7 @@
     <div class="p-ctn reg-ctn container-fluid">
 
         <div class="reg-title">
-            Science and Tech
+Science and Tech
         </div>
 
         <div class="row ">
@@ -1021,7 +1037,7 @@
     <div class="p-ctn reg-ctn container-fluid">
 
         <div class="reg-title">
-            Business
+             Business
         </div>
 
         <div class="row ">
@@ -1083,7 +1099,7 @@
     <div class="p-ctn reg-ctn container-fluid">
 
         <div class="reg-title">
-            Sports
+ Sports
         </div>
 
         <div class="row ">
@@ -1247,8 +1263,10 @@
         document.getElementById("col2-div").style.top = "-"+col2height+"px"
         //col2height = -1500
         //
-        
+
     </script>
+
+    <script src="scroll.js">    </script>
 
     <!-- add bootstarp js -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
