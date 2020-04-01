@@ -2,6 +2,18 @@
   --bg-color: rgb(247, 34, 16);
 }
 
+html {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+* *::before *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0 auto;
@@ -9,14 +21,15 @@ body {
   min-width: 320px;
 }
 
-.container-fluid, .container {
+.container-fluid,
+.container {
   max-width: 1310px;
   min-width: 320px;
 }
 
 a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
 
 a:hover {
@@ -39,7 +52,7 @@ a:hover {
   height: 24px;
 }
 
-date {
+.date {
   line-height: 42px;
 }
 
@@ -54,7 +67,6 @@ date {
   padding: 20px;
   padding-left: 30px;
   padding-bottom: 10px;
-
   color: white;
 }
 
@@ -63,27 +75,27 @@ date {
 }
 
 .header-ctn span {
-  font-size: 14px;;
+  font-size: 14px;
 }
 
 .nav-sign {
-    color: white; 
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px 10px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    vertical-align: bottom;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 10px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 .nav-subs {
-    background-color: white;
-    color: var(--bg-color);
-    font-size: 18px;
-    line-height: 14px;
-    font-weight: 700;
-    padding: 5px 10px;
-    text-transform: uppercase;
+  background-color: white;
+  color: var(--bg-color);
+  font-size: 18px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
 
 .header-nav {
@@ -110,7 +122,7 @@ date {
 
 .last-link {
   font-size: 16px;
-  color: rgba(0,0,0,.55);
+  color: rgba(0, 0, 0, 0.55);
   font-weight: 400;
   border-right: none;
 }
@@ -120,15 +132,14 @@ date {
   width: 16px;
 }
 
-/* header 2*/
+/* header 2 */
 
 .header2 {
-  display:flex;
+  display: flex;
   padding: 15px;
   background-color: var(--bg-color);
   color: white;
 }
-
 
 .header-a {
   align-items: center;
@@ -145,13 +156,16 @@ date {
   width: 74px;
 }
 
-/* main sec*/
+/* main sec */
 
 .news-ctn {
   padding: 10px 15px;
 }
 
-.col1, .col2, .col3, .col4 {
+.col1,
+.col2,
+.col3,
+.col4 {
   float: left;
   width: 100%;
   min-height: 300px;
@@ -164,7 +178,6 @@ date {
 .col1 {
   padding-left: 15px;
   padding-right: 15px;
-
 }
 
 .col2 {
@@ -173,25 +186,20 @@ date {
   padding-right: 15px;
 }
 
-.col2-ctn{
+.col2-ctn {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
 }
 
-.m-stories {
-
-}
-
-.col3{
+.col3 {
   padding-left: 15px;
 }
-
 
 /* feature - articles #col1 */
 
 .col-title {
-  color: rgba(3,3,3,.4);
+  color: rgba(3, 3, 3, 0.4);
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
@@ -208,18 +216,16 @@ date {
   position: relative;
 }
 
-.img-caption{
+.img-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   text-transform: uppercase;
-  font-size: 24px;
   font-weight: 700;
-  color: inherit;
   padding: 8px 15px 9px;
   font-size: 17px;
   color: var(--bg-color);
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .art-cnt {
@@ -240,39 +246,37 @@ date {
   justify-content: space-evenly;
 }
 
-.ct-art{
+.ct-art {
   flex: 1;
-  padding-right:15px;
+  padding-right: 15px;
 }
 
-.ct-art-img{
+.ct-art-img {
   position: relative;
   display: block;
 }
 
-.ct-art-img > img{
+.ct-art-img > img {
   width: 100%;
 }
 
-.ct-art-cnt{
+.ct-art-cnt {
   padding: 15px 0;
 }
 
 .ct-art-cnt > p {
-  font: 15px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
-  color: rgba(39,39,39,.5);
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
   margin-bottom: 10px;
 }
 
 .ct-art-cnt > h4 {
-  font-weight: 400;
   color: #272727;
-  font: 20px/22px "Lora",serif;
+  font: 400 20px/22px "Lora", serif;
   margin-bottom: 10px;
-
 }
 
-/* more stories*/
+/* more stories */
 
 .ms-art-cnt {
   min-height: 120px;
@@ -293,16 +297,16 @@ date {
 
 .ms-art-cnt > p {
   font-size: 15px;
-  color: #333333;
+  color: #333;
 }
 
-/*Col 3*/
+/* Col 3 */
 
-.op-title{
+.op-title {
   padding-bottom: 0;
 }
 
-.opinion-ctn{
+.opinion-ctn {
   padding-right: 15px;
 }
 
@@ -318,10 +322,9 @@ date {
 .opinion-img {
   height: 95 px;
   margin-right: 15px;
-
 }
 
-.opinion-cnt{
+.opinion-cnt {
   flex: 1;
   min-height: 75px;
 }
@@ -342,8 +345,7 @@ date {
   font-weight: 700;
 }
 
-/*debate*/
-
+/* debate */
 
 .debate-art {
   display: flex;
@@ -352,7 +354,7 @@ date {
   margin-bottom: 10px;
 }
 
-.debate-art2{
+.debate-art2 {
   border-top: 4px solid #1c87fb;
 }
 
@@ -363,12 +365,11 @@ date {
 
 .debate-img {
   height: 95px;
-  width: 95px;
   margin-right: 15px;
   width: 25%;
 }
 
-.debate-cnt{
+.debate-cnt {
   padding: 10px;
   width: 85%;
 }
@@ -382,6 +383,7 @@ date {
   left: 0;
   right: 0;
 }
+
 .vs-line2 {
   display: block;
   background-color: #d9d9d9;
@@ -411,12 +413,12 @@ date {
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%;
-  font: bold 14px/40px "Roboto Condensed",sans-serif;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
   text-align: center;
   margin: 14px auto 18px;
 }
 
-.lnews-ctn :last-child{
+.lnews-ctn :last-child {
   border: none;
 }
 
@@ -433,7 +435,7 @@ date {
   flex: none;
 }
 
-.lnews-cnt{
+.lnews-cnt {
   padding: 0 10px 10px 10px;
   flex: 1;
 }
@@ -454,20 +456,19 @@ date {
   width: fit-content;
 }
 
-.s-insight-cnt{
+.s-insight-cnt {
   padding: 5px 10px;
 }
 
-.blue-text{
+.blue-text {
   color: #3581f4;
 }
 
-/* In Magzine*/
+/* In Magzine */
 
 .p-ctn {
   padding: 15px;
 }
-
 
 .n-logo {
   flex: none;
@@ -495,7 +496,7 @@ date {
   margin: 30px 0;
 }
 
-.mag-caption{
+.mag-caption {
   color: white;
   margin-top: 15px;
 }
@@ -504,7 +505,6 @@ date {
   text-transform: uppercase;
   line-height: 26px;
   font-weight: 700;
-  color: inherit;
   padding: 7px;
   font-size: 16px;
   color: white;
@@ -515,11 +515,10 @@ date {
   text-transform: uppercase;
   line-height: 24px;
   font-weight: 700;
-  color: inherit;
   padding: 0 7px;
   font-size: 16px;
   color: var(--bg-color);
-  background-color: rgba(255,255,255,.9);  
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .ad-title {
@@ -550,7 +549,7 @@ date {
   margin: 15px 0;
 }
 
-.slide-ctn{
+.slide-ctn {
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -569,28 +568,27 @@ date {
   background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
   color: #e9212e;
 }
-.slide-cnt > h4{
+
+.slide-cnt > h4 {
   padding: 10px 0;
   font-weight: 700;
   font-size: 22px;
   color: black;
 }
 
-/* other stories*/
+/* other stories */
 
 .reg-ctn {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.reg-title{
+.reg-title {
   font-size: 22px;
   font-weight: 700;
-  color: inherit;
   padding: 8px 0;
   color: var(--bg-color);
-  background-color: rgba(255,255,255,.9);  
+  background-color: rgba(255, 255, 255, 0.9);
 }
-
 
 .reg-art {
   padding: 10px 0;
@@ -607,15 +605,13 @@ date {
   height: 2px;
   position: absolute;
   top: 0;
-/*  left: -15px;
-  right: -15px; */
 }
 
 .subs-ctn {
   padding: 40px 15px;
 }
 
-.subs-title{
+.subs-title {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -632,7 +628,6 @@ date {
 .subs-img1 {
   width: 170px;
   height: 228px;
-
 }
 
 .subs {
@@ -644,7 +639,7 @@ date {
   flex-direction: column;
 }
 
-.subs-img2{
+.subs-img2 {
   width: 170px;
   height: 228px;
   position: absolute;
@@ -657,10 +652,9 @@ date {
   padding-left: 30px;
 }
 
-.subs-cnt >  h4 {
+.subs-cnt > h4 {
   font-size: 22px;
   font-weight: 700;
-
 }
 
 .subs-btn {
@@ -674,11 +668,10 @@ date {
   background-color: var(--bg-color);
 }
 
-.signup-img{
+.signup-img {
   width: 48%;
   max-width: 191px;
   flex: none;
-  background-size: cover;
   background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
 }
 
@@ -694,8 +687,8 @@ date {
 
 footer {
   padding: 30px 0;
-  color: #666666;
-  font-family: Arial,Helvetica,sans-serif;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
@@ -714,7 +707,7 @@ footer {
 
 .foot-cnt {
   align-items: flex-end;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 .foot-cnts {
@@ -722,10 +715,10 @@ footer {
 }
 
 .social {
- padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
-.social  img {
+.social img {
   margin: 5px;
   height: 24px;
   width: 26px;
@@ -744,7 +737,7 @@ footer {
   line-height: 15px;
   padding-right: 8px;
   margin: 6px 0;
-  border-right: 1px solid #d9d9d9;;
+  border-right: 1px solid #d9d9d9;
 }
 
 .links1 :last-child {
@@ -759,7 +752,7 @@ footer {
   line-height: 15px;
   padding-right: 8px;
   margin: 6px 0;
-  border-right: 1px solid #d9d9d9;;
+  border-right: 1px solid #d9d9d9;
 }
 
 .links2 a {
@@ -771,11 +764,9 @@ footer {
   padding-left: 0;
 }
 
-
-/* media queries*/
+/* media queries */
 
 @media screen and (max-width: 991px) {
-
   .main {
     margin-top: 30px;
   }
@@ -783,7 +774,6 @@ footer {
   .header2 {
     display: flex;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -793,7 +783,8 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .nav-sign, .nav-subs {
+  .nav-sign,
+  .nav-subs {
     font-size: 14px;
   }
 
@@ -803,10 +794,10 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  .header2 span, .weather-img {
+  .header2 span,
+  .weather-img {
     display: none;
   }
-
 
   .nav-subs {
     padding: 5px;
@@ -814,7 +805,6 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-
   .header2 {
     display: none;
   }
@@ -833,33 +823,32 @@ footer {
     left: 40%;
   }
 
-  .col4{
+  .col4 {
     width: 72%;
   }
 
-  .col3{
+  .col3 {
     width: 28%;
   }
 
   .mag-img > img {
     min-height: 220px;
   }
-
 }
 
 @media screen and (min-width: 768px) {
   .col1 {
     width: 45%;
   }
-   .col2 {
+
+  .col2 {
     position: absolute;
-     width: 55%;
-     left: 45%;
-   }
+    width: 55%;
+    left: 45%;
+  }
 }
 
 @media screen and (max-width: 767px) {
-
   .col1 {
     order: 2;
   }
@@ -867,5 +856,4 @@ footer {
   .col2 {
     order: 1;
   }
-
 }
