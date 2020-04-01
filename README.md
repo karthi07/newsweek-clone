@@ -1,4 +1,4 @@
-# newsweek-clone
+# Newsweek-clone
 
 > The Newsweek homepage clone
 
@@ -22,8 +22,8 @@ Clone of the homepage on Newsweek.com
   Project give way to people who are willing to see how to use Bootstrap and renponsive design to a website. The header helps learners to have multiple navbars and to use them properly in terms of placing and giving layout. The entire article elements were used with flexbox and grid layout to give responsiveness using bootstrap. Also, media queries are there to see the page on different devices, including tablets and smartphones.
 
   Notable implementation :
-    # Switch header on scroll
-    # partial implementation of sticky scroll on the top center div
+    * Switch header on scroll
+    * partial implementation of sticky scroll on the top center div 
 
 
   The reason behind this project is to have further understanding in responsive design and it is only for educational purposes. Anyone who thinks about using it for their own learning is welcomed. We appreciate everyone who is interested in this project.
