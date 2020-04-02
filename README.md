@@ -20,7 +20,7 @@ Clone of the homepage on Newsweek.com
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/karthi07/newsweek-clone/features/index.html)
+[Live Demo Link](https://karthi07.github.io/newsweek-clone/)
 
 
 ## Author
