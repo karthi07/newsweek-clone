@@ -806,7 +806,8 @@ footer {
     display: none;
   }
 
-  .nav-subs {
+  .nav-subs,
+  .nav-sign {
     padding: 5px;
   }
 }
